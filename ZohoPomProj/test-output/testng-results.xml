@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="3" ignored="0" total="6" passed="0">
+<testng-results skipped="2" failed="1" ignored="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Login Suite" duration-ms="62762" started-at="2020-05-23T16:42:29 IST" finished-at="2020-05-23T16:43:31 IST">
+  <suite name="Login Suite" duration-ms="45930" started-at="2020-05-24T16:07:03 IST" finished-at="2020-05-24T16:07:49 IST">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="62762" started-at="2020-05-23T16:42:29 IST" finished-at="2020-05-23T16:43:31 IST">
+    <test name="Login Test" duration-ms="45930" started-at="2020-05-24T16:07:03 IST" finished-at="2020-05-24T16:07:49 IST">
       <class name="com.zoho.suite.testcases.login.LoginTest">
-        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@3c41ed1d]" name="init" is-config="true" duration-ms="194" started-at="2020-05-23T16:42:29 IST" finished-at="2020-05-23T16:42:29 IST">
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@6c6cb480]" name="init" is-config="true" duration-ms="150" started-at="2020-05-24T16:07:03 IST" finished-at="2020-05-24T16:07:03 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@3c41ed1d] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@6c6cb480] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@3c41ed1d]" name="loginTest" duration-ms="61226" started-at="2020-05-23T16:42:29 IST" data-provider="getData" finished-at="2020-05-23T16:43:30 IST">
+        <test-method status="FAIL" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@6c6cb480]" name="loginTest" duration-ms="43994" started-at="2020-05-24T16:07:03 IST" data-provider="getData" finished-at="2020-05-24T16:07:47 IST">
           <params>
             <param index="0">
               <value>
@@ -26,25 +26,57 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+              <![CDATA[chrome not reachable
+  (Session info: chrome=81.0.4044.138)
 Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
 System info: host: 'DESKTOP-V123S32', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: ZohoDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Abhi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49238}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9fba81a45a11531d239752b597ebe8ab]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=81.0.4044.138)
 Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
 System info: host: 'DESKTOP-V123S32', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: ZohoDriver
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:149)
-at com.zoho.web.ZohoDriver.openBrowser(ZohoDriver.java:41)
-at com.zoho.pages.normal.LaunchPage.openBrowser(LaunchPage.java:16)
-at com.zoho.suite.testcases.login.LoginTest.loginTest(LoginTest.java:68)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Abhi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49238}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9fba81a45a11531d239752b597ebe8ab
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:639)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:303)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:106)
+at com.sun.proxy.$Proxy12.getScreenshotAs(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:303)
+at com.zoho.session.ZohoTestSession.takeScreenShot(ZohoTestSession.java:88)
+at com.zoho.session.ZohoTestSession.failTest(ZohoTestSession.java:78)
+at com.zoho.web.ZohoValidationDriver.fail(ZohoValidationDriver.java:128)
+at com.zoho.listener.ZohoEventListener.beforeFindBy(ZohoEventListener.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:85)
+at com.sun.proxy.$Proxy11.beforeFindBy(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+at com.zoho.web.ZohoValidationDriver.validateText(ZohoValidationDriver.java:47)
+at com.zoho.suite.testcases.login.LoginTest.loginTest(LoginTest.java:71)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -68,55 +100,28 @@ at java.util.concurrent.FutureTask.run(Unknown Source)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:47)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-... 29 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
-at java.util.concurrent.CompletableFuture.get(Unknown Source)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
-... 39 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 60000 ms
-at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
-at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
-at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
-at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-... 1 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@3c41ed1d]" name="quit" is-config="true" duration-ms="1195" started-at="2020-05-23T16:43:30 IST" finished-at="2020-05-23T16:43:31 IST">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@6c6cb480]" name="quit" is-config="true" duration-ms="1649" started-at="2020-05-24T16:07:47 IST" finished-at="2020-05-24T16:07:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@3c41ed1d]" name="init" is-config="true" duration-ms="1" started-at="2020-05-23T16:43:31 IST" finished-at="2020-05-23T16:43:31 IST">
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@6c6cb480]" name="init" is-config="true" duration-ms="1" started-at="2020-05-24T16:07:48 IST" finished-at="2020-05-24T16:07:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@3c41ed1d] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@6c6cb480] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@3c41ed1d]" name="loginTest" duration-ms="2" started-at="2020-05-23T16:43:31 IST" data-provider="getData" finished-at="2020-05-23T16:43:31 IST">
+        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@6c6cb480]" name="loginTest" duration-ms="3" started-at="2020-05-24T16:07:48 IST" data-provider="getData" finished-at="2020-05-24T16:07:49 IST">
           <params>
             <param index="0">
               <value>
@@ -160,22 +165,22 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@3c41ed1d]" name="quit" is-config="true" duration-ms="10" started-at="2020-05-23T16:43:31 IST" finished-at="2020-05-23T16:43:31 IST">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@6c6cb480]" name="quit" is-config="true" duration-ms="21" started-at="2020-05-24T16:07:49 IST" finished-at="2020-05-24T16:07:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@3c41ed1d]" name="init" is-config="true" duration-ms="1" started-at="2020-05-23T16:43:31 IST" finished-at="2020-05-23T16:43:31 IST">
+        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@6c6cb480]" name="init" is-config="true" duration-ms="1" started-at="2020-05-24T16:07:49 IST" finished-at="2020-05-24T16:07:49 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@3c41ed1d] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@6c6cb480] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@3c41ed1d]" name="loginTest" duration-ms="1" started-at="2020-05-23T16:43:31 IST" data-provider="getData" finished-at="2020-05-23T16:43:31 IST">
+        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@6c6cb480]" name="loginTest" duration-ms="2" started-at="2020-05-24T16:07:49 IST" data-provider="getData" finished-at="2020-05-24T16:07:49 IST">
           <params>
             <param index="0">
               <value>
@@ -219,238 +224,11 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@3c41ed1d]" name="quit" is-config="true" duration-ms="14" started-at="2020-05-23T16:43:31 IST" finished-at="2020-05-23T16:43:31 IST">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.zoho.suite.testcases.login.LoginTest@6c6cb480]" name="quit" is-config="true" duration-ms="11" started-at="2020-05-24T16:07:49 IST" finished-at="2020-05-24T16:07:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.zoho.suite.testcases.login.LoginTest -->
     </test> <!-- Login Test -->
   </suite> <!-- Login Suite -->
-  <suite name="Create Suite" duration-ms="59562" started-at="2020-05-23T16:43:32 IST" finished-at="2020-05-23T16:44:31 IST">
-    <groups>
-    </groups>
-    <test name="CreateTask Test" duration-ms="59537" started-at="2020-05-23T16:43:32 IST" finished-at="2020-05-23T16:44:31 IST">
-      <class name="com.zoho.suite.testcases.creation.CreateTaskTest">
-        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.zoho.suite.testcases.creation.CreateTaskTest@247bddad]" name="init" is-config="true" duration-ms="4" started-at="2020-05-23T16:43:32 IST" finished-at="2020-05-23T16:43:32 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CreateTaskTest.createTaskTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.creation.CreateTaskTest@247bddad] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="FAIL" signature="createTaskTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.creation.CreateTaskTest@247bddad]" name="createTaskTest" duration-ms="57722" started-at="2020-05-23T16:43:32 IST" data-provider="getData" finished-at="2020-05-23T16:44:29 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Date=03-06-2020, Subject=Sales Meeting, Runmode=Y, Contact=Simon Morasca, Browser=Chrome}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Element not found - By.all({By.cssSelector: div.zl-nth-child1,By.cssSelector: div.zl-nth-child2,By.cssSelector: div.zl-nth-child3,By.cssSelector: div.zl-nth-child4})]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Element not found - By.all({By.cssSelector: div.zl-nth-child1,By.cssSelector: div.zl-nth-child2,By.cssSelector: div.zl-nth-child3,By.cssSelector: div.zl-nth-child4})
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at com.zoho.web.ZohoValidationDriver.assertAll(ZohoValidationDriver.java:96)
-at com.zoho.web.ZohoValidationDriver.fail(ZohoValidationDriver.java:135)
-at com.zoho.listener.ZohoEventListener.beforeFindBy(ZohoEventListener.java:33)
-at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:85)
-at com.sun.proxy.$Proxy10.beforeFindBy(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElements(EventFiringWebDriver.java:182)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-at com.sun.proxy.$Proxy18.size(Unknown Source)
-at com.zoho.pages.session.IntermediatePage.validateIntermediatePageOptions(IntermediatePage.java:41)
-at com.zoho.suite.testcases.creation.CreateTaskTest.createTaskTest(CreateTaskTest.java:47)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTaskTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.zoho.suite.testcases.creation.CreateTaskTest@247bddad]" name="quit" is-config="true" duration-ms="1739" started-at="2020-05-23T16:44:29 IST" finished-at="2020-05-23T16:44:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- com.zoho.suite.testcases.creation.CreateTaskTest -->
-    </test> <!-- CreateTask Test -->
-    <test name="CreateLead Test" duration-ms="59562" started-at="2020-05-23T16:43:32 IST" finished-at="2020-05-23T16:44:31 IST">
-      <class name="com.zoho.suite.testcases.creation.CreateLeadTest">
-        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.zoho.suite.testcases.creation.CreateLeadTest@4e08711f]" name="init" is-config="true" duration-ms="0" started-at="2020-05-23T16:43:32 IST" finished-at="2020-05-23T16:43:32 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CreateLeadTest.createLeadTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.creation.CreateLeadTest@4e08711f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="FAIL" signature="createLeadTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.creation.CreateLeadTest@4e08711f]" name="createLeadTest" duration-ms="57715" started-at="2020-05-23T16:43:32 IST" data-provider="getData" finished-at="2020-05-23T16:44:29 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{LeadName=Gates, Runmode=Y, LeadCompany=Microsoft, Browser=Chrome}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Element not found - By.all({By.cssSelector: div.zl-nth-child1,By.cssSelector: div.zl-nth-child2,By.cssSelector: div.zl-nth-child3,By.cssSelector: div.zl-nth-child4})]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Element not found - By.all({By.cssSelector: div.zl-nth-child1,By.cssSelector: div.zl-nth-child2,By.cssSelector: div.zl-nth-child3,By.cssSelector: div.zl-nth-child4})
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at com.zoho.web.ZohoValidationDriver.assertAll(ZohoValidationDriver.java:96)
-at com.zoho.web.ZohoValidationDriver.fail(ZohoValidationDriver.java:135)
-at com.zoho.listener.ZohoEventListener.beforeFindBy(ZohoEventListener.java:33)
-at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:85)
-at com.sun.proxy.$Proxy10.beforeFindBy(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElements(EventFiringWebDriver.java:182)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
-at com.sun.proxy.$Proxy18.size(Unknown Source)
-at com.zoho.pages.session.IntermediatePage.validateIntermediatePageOptions(IntermediatePage.java:41)
-at com.zoho.suite.testcases.creation.CreateLeadTest.createLeadTest(CreateLeadTest.java:49)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createLeadTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.zoho.suite.testcases.creation.CreateLeadTest@4e08711f]" name="quit" is-config="true" duration-ms="1740" started-at="2020-05-23T16:44:29 IST" finished-at="2020-05-23T16:44:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-        <test-method status="PASS" signature="init(org.testng.ITestResult)[pri:0, instance:com.zoho.suite.testcases.creation.CreateLeadTest@4e08711f]" name="init" is-config="true" duration-ms="2" started-at="2020-05-23T16:44:31 IST" finished-at="2020-05-23T16:44:31 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CreateLeadTest.createLeadTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.creation.CreateLeadTest@4e08711f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="createLeadTest(java.util.Hashtable)[pri:0, instance:com.zoho.suite.testcases.creation.CreateLeadTest@4e08711f]" name="createLeadTest" duration-ms="3" started-at="2020-05-23T16:44:31 IST" data-provider="getData" finished-at="2020-05-23T16:44:31 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{LeadName=Gates, Runmode=N, LeadCompany=Microsoft, Browser=Mozilla}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping the test as Runmode was NO]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as Runmode was NO
-at com.zoho.suite.testcases.creation.CreateLeadTest.createLeadTest(CreateLeadTest.java:38)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createLeadTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.zoho.suite.testcases.creation.CreateLeadTest@4e08711f]" name="quit" is-config="true" duration-ms="15" started-at="2020-05-23T16:44:31 IST" finished-at="2020-05-23T16:44:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- com.zoho.suite.testcases.creation.CreateLeadTest -->
-    </test> <!-- CreateLead Test -->
-  </suite> <!-- Create Suite -->
-  <suite name="My Suite" duration-ms="0" started-at="2020-05-23T16:44:31 IST" finished-at="2020-05-23T16:44:31 IST">
-    <groups>
-    </groups>
-  </suite> <!-- My Suite -->
 </testng-results>

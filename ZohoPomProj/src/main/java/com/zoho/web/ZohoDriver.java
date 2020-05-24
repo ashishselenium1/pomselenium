@@ -53,6 +53,8 @@ public class ZohoDriver extends ZohoValidationDriver{
 			
 			
 		}else {// normal run
+			driver = new EventFiringWebDriver(new FirefoxDriver());
+		   /*
 			if(bName.equalsIgnoreCase("chrome")) {
 				ChromeOptions opt = new ChromeOptions();
 				opt.addArguments("--disable-notifications");
@@ -61,6 +63,7 @@ public class ZohoDriver extends ZohoValidationDriver{
 				driver = new EventFiringWebDriver(new FirefoxDriver());// Launching the LaunchPage
 
 			}
+			*/
 		}
 		
 		
